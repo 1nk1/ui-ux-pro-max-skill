@@ -47,7 +47,8 @@ out/
 .env.local
 .env.*.local
 
-# Local settings
+# Claude Code — project just-me (not committed)
 .claude/settings.local.json
 .claude/session-state/
+CLAUDE.local.md
 ui-ux-pro-max-website/*
