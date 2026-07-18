@@ -52,3 +52,6 @@ out/
 .claude/session-state/
 CLAUDE.local.md
 ui-ux-pro-max-website/*
+
+cli/playwright-report/
+cli/test-results/

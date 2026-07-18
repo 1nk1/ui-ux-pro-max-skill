@@ -314,6 +314,7 @@ uipro init --ai droid       # Droid (Factory)
 uipro init --ai kilocode    # KiloCode
 uipro init --ai warp        # Warp
 uipro init --ai augment     # Augment
+uipro init --ai codewhale   # CodeWhale
 uipro init --ai all         # 所有助手
 ```
 
@@ -352,7 +353,7 @@ python3 --version
 
 ### 技能模式 (自动激活)
 
-**支持：** Claude Code、Cursor、Windsurf、Antigravity、Codex CLI、Continue、Gemini CLI、OpenCode、Qoder、CodeBuddy、Droid (Factory)、KiloCode、Warp、Augment
+**支持：** Claude Code、Cursor、Windsurf、Antigravity、Codex CLI、Continue、Gemini CLI、OpenCode、Qoder、CodeBuddy、Droid (Factory)、KiloCode、Warp、Augment、CodeWhale
 
 当你请求 UI/UX 工作时，技能会自动激活。只需自然地聊天：
 
@@ -406,7 +407,7 @@ python3 --version
 | **Angular** | Angular |
 | **PHP** | Laravel (Blade、Livewire、Inertia.js) |
 | **其他 Web** | Svelte、Astro、Three.js |
-| **桌面端** | JavaFX |
+| **桌面端** | JavaFX、WPF、WinUI 3、Avalonia、Uno Platform、UWP |
 | **iOS** | SwiftUI |
 | **Android** | Jetpack Compose |
 | **跨平台** | React Native、Flutter |
@@ -600,11 +601,10 @@ npx ui-ux-pro-max-cli init --ai claude
 
 ### 设计系统输出被截断 / 字段不完整
 
-使用 `--max-length` 标志增加（或取消）截断限制：
+人类可读输出会将超过 300 字符的长字段截断。使用 `--json` 获取完整、未截断的数据：
 
 ```bash
-python3 .claude/skills/ui-ux-pro-max/scripts/search.py "SaaS" --domain style --max-length 0
-#                                                                               ^ 0 = 不限制
+python3 .claude/skills/ui-ux-pro-max/scripts/search.py "SaaS" --domain style --json
 ```
 
 ---
